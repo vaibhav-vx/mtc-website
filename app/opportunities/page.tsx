@@ -10,7 +10,7 @@ export default function OpportunitiesPage() {
   return (
     <div className="flex min-h-screen flex-col bg-gray-50/50">
       <main className="flex-1">
-        <div className="flex flex-col gap-12 px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
+        <div className="flex flex-col gap-12 px-4 pt-28 pb-12 sm:px-6 sm:pt-32 sm:pb-16 lg:px-8">
           <div className="mx-auto w-full max-w-7xl">
             
             {/* Header Section */}
@@ -232,15 +232,15 @@ export default function OpportunitiesPage() {
             </div>
 
             {/* Bottom Call to Action */}
-            <div className="animate-fade-up delay-700 mt-12 rounded-2xl border border-gray-200 bg-white px-6 py-8 sm:px-8 sm:py-10 shadow-lg">
+            <div className="animate-fade-up delay-700 mt-12 rounded-2xl border border-transparent bg-black px-6 py-8 sm:px-8 sm:py-10 shadow-lg">
               <div className="mx-auto max-w-3xl text-center">
-                <h2 className="font-display text-2xl font-bold tracking-tight text-black sm:text-3xl">
+                <h2 className="font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
                   Have an opportunity to share?
                 </h2>
-                <p className="mt-3 text-gray-500">
+                <p className="mt-3 text-white/80">
                   Post hackathons, internships, jobs, and events that would help the community grow.
                 </p>
-                <Link href="/join" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors border border-transparent bg-black text-white hover:bg-black/90 h-9 px-4 py-2 mt-6 rounded-full shadow-sm">
+                <Link href="/join" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-colors border border-transparent bg-white text-black hover:bg-gray-100 h-9 px-4 py-2 mt-6 rounded-full shadow-sm">
                   Submit an opportunity
                 </Link>
               </div>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function JoinPage() {
   return (
-    <div className="flex flex-col gap-12 px-4 py-12 sm:px-6 sm:py-16 lg:px-8 bg-gray-50/50 min-h-screen">
+    <div className="flex flex-col gap-12 px-4 pt-28 pb-12 sm:px-6 sm:pt-32 sm:pb-16 lg:px-8 bg-gray-50/50 min-h-screen">
       <div className="mx-auto w-full max-w-7xl">
         <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
           
