@@ -15,7 +15,7 @@ const TEAM = [
     initials: "SP"
   },
   {
-    name: "Suraj Saharan",
+    name: "Suraj Sah",
     role: "Head of Events",
     image: "bg-purple-100 text-purple-600",
     initials: "SS"
