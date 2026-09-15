@@ -19,6 +19,7 @@ const TIMELINE_EVENTS = [
         image: "from-blue-100 to-blue-200",
         attendees: 142,
         status: "Event ended",
+        active: false
       }
     ]
   },
@@ -34,6 +35,7 @@ const TIMELINE_EVENTS = [
         image: "from-indigo-100 to-purple-200",
         attendees: 85,
         status: "Event ended",
+        active: false
       }
     ]
   },
