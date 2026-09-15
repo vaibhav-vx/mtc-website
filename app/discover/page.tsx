@@ -132,7 +132,7 @@ export default function DiscoverPage() {
                   <Link 
                     key={category.id} 
                     href="/events" 
-                    className={`flex flex-col items-start justify-between p-4 rounded-2xl bg-white border border-gray-200 shadow-sm transition-all hover:shadow-md hover:border-gray-300 ${category.bg} group aspect-square`}
+                    className={`flex flex-col items-start justify-between p-4 rounded-2xl bg-white border border-gray-200 shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 hover:border-gray-300 ${category.bg} group aspect-square`}
                   >
                     <div className={`p-2.5 rounded-xl ${category.color} transition-transform group-hover:scale-110`}>
                       <category.icon className="w-5 h-5" />
@@ -172,7 +172,7 @@ export default function DiscoverPage() {
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {filteredEvents.length > 0 ? (
                   filteredEvents.map((event) => (
-                    <Link key={event.id} href="/events" className="group flex flex-col rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 overflow-hidden">
+                    <Link key={event.id} href="/events" className="group flex flex-col rounded-2xl bg-white border border-gray-200 shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 overflow-hidden">
                       {/* Image Banner */}
                       <div className={`relative aspect-[2/1] w-full bg-gradient-to-br ${event.image}`}>
                         {/* Floating Date Badge */}

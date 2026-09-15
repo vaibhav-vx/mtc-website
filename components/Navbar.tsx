@@ -44,16 +44,28 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-6">
-          {LINKS.map((l) => (
-            <Link
-              key={l.label}
-              href={l.href}
-              className={`text-sm font-medium transition-colors ${applyScrolledStyle ? 'text-gray-500 hover:text-black' : 'text-white/80 hover:text-white'}`}
-            >
-              {l.label}
-            </Link>
-          ))}
+        <div className={`hidden md:flex items-center p-1 rounded-full transition-colors ${applyScrolledStyle ? 'bg-gray-100/80' : 'bg-white/10 backdrop-blur-sm'}`}>
+          {LINKS.map((l) => {
+            // Precise active matching (handles root and exact paths)
+            const isActive = l.href === "/" ? pathname === "/" : pathname.startsWith(l.href);
+            return (
+              <Link
+                key={l.label}
+                href={l.href}
+                className={`text-sm font-semibold px-4 py-1.5 rounded-full transition-all ${
+                  isActive 
+                    ? applyScrolledStyle 
+                      ? 'bg-white text-black shadow-[0_2px_8px_rgba(0,0,0,0.08)]' 
+                      : 'bg-white/20 text-white shadow-sm'
+                    : applyScrolledStyle
+                      ? 'text-gray-500 hover:text-black hover:bg-black/5'
+                      : 'text-white/80 hover:text-white hover:bg-white/10'
+                }`}
+              >
+                {l.label}
+              </Link>
+            );
+          })}
         </div>
 
         {/* Desktop CTA */}

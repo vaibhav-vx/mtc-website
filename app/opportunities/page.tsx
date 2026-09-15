@@ -69,7 +69,7 @@ export default function OpportunitiesPage() {
               
               {/* Opportunity Card 1 */}
               <div className="animate-fade-up">
-                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow group flex h-full flex-col">
+                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 group flex h-full flex-col">
                   <div className="flex flex-col space-y-1.5 p-6 flex-1 pb-3">
                     <div className="mb-3 flex items-center justify-between">
                       <div className="inline-flex items-center border border-transparent bg-gray-100 text-gray-800 px-2.5 py-0.5 text-xs font-semibold rounded-full capitalize">
@@ -96,7 +96,7 @@ export default function OpportunitiesPage() {
 
               {/* Opportunity Card 2 */}
               <div className="animate-fade-up delay-75">
-                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow group flex h-full flex-col">
+                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 group flex h-full flex-col">
                   <div className="flex flex-col space-y-1.5 p-6 flex-1 pb-3">
                     <div className="mb-3 flex items-center justify-between">
                       <div className="inline-flex items-center border border-transparent bg-gray-100 text-gray-800 px-2.5 py-0.5 text-xs font-semibold rounded-full capitalize">
@@ -123,7 +123,7 @@ export default function OpportunitiesPage() {
 
               {/* Opportunity Card 3 */}
               <div className="animate-fade-up delay-150">
-                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow group flex h-full flex-col">
+                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 group flex h-full flex-col">
                   <div className="flex flex-col space-y-1.5 p-6 flex-1 pb-3">
                     <div className="mb-3 flex items-center justify-between">
                       <div className="inline-flex items-center border border-transparent bg-gray-100 text-gray-800 px-2.5 py-0.5 text-xs font-semibold rounded-full capitalize">
@@ -150,7 +150,7 @@ export default function OpportunitiesPage() {
 
               {/* Opportunity Card 4 */}
               <div className="animate-fade-up delay-200">
-                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow group flex h-full flex-col">
+                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 group flex h-full flex-col">
                   <div className="flex flex-col space-y-1.5 p-6 flex-1 pb-3">
                     <div className="mb-3 flex items-center justify-between">
                       <div className="inline-flex items-center border border-transparent bg-gray-100 text-gray-800 px-2.5 py-0.5 text-xs font-semibold rounded-full capitalize">
@@ -177,7 +177,7 @@ export default function OpportunitiesPage() {
 
               {/* Opportunity Card 5 */}
               <div className="animate-fade-up delay-300">
-                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow group flex h-full flex-col">
+                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 group flex h-full flex-col">
                   <div className="flex flex-col space-y-1.5 p-6 flex-1 pb-3">
                     <div className="mb-3 flex items-center justify-between">
                       <div className="inline-flex items-center border border-transparent bg-gray-100 text-gray-800 px-2.5 py-0.5 text-xs font-semibold rounded-full capitalize">
@@ -204,7 +204,7 @@ export default function OpportunitiesPage() {
 
               {/* Opportunity Card 6 */}
               <div className="animate-fade-up delay-500">
-                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow group flex h-full flex-col">
+                <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 group flex h-full flex-col">
                   <div className="flex flex-col space-y-1.5 p-6 flex-1 pb-3">
                     <div className="mb-3 flex items-center justify-between">
                       <div className="inline-flex items-center border border-transparent bg-gray-100 text-gray-800 px-2.5 py-0.5 text-xs font-semibold rounded-full capitalize">

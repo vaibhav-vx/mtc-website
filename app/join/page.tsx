@@ -21,7 +21,7 @@ export default function JoinPage() {
 
             <div className="mt-8 grid gap-4 lg:mt-10">
               {/* Feature 1 */}
-              <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow">
+              <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5">
                 <div className="flex items-start gap-4 p-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-black/5 text-black">
                     <Mail className="h-5 w-5" />
@@ -36,7 +36,7 @@ export default function JoinPage() {
               </div>
 
               {/* Feature 2 */}
-              <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow delay-75">
+              <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 delay-75">
                 <div className="flex items-start gap-4 p-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-black/5 text-black">
                     <Users className="h-5 w-5" />
@@ -51,7 +51,7 @@ export default function JoinPage() {
               </div>
 
               {/* Feature 3 */}
-              <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-shadow delay-150">
+              <div className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-md transition-all hover:-translate-y-0.5 delay-150">
                 <div className="flex items-start gap-4 p-4">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-black/5 text-black">
                     <Sparkles className="h-5 w-5" />
