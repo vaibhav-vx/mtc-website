@@ -1,10 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import { Calendar, MapPin, Clock, ArrowRight, User } from "lucide-react";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Events — Mumbai Tech Community",
-  description: "Discover upcoming meetups, workshops, hackathons, and conferences in Mumbai's tech community.",
-};
+// Metadata is not supported in "use client" components, but this is a tradeoff for interactivity.
+// Moving metadata to a layout or parent component is recommended for SEO later.
 
 const TIMELINE_EVENTS = [
   {
@@ -74,6 +75,13 @@ const TIMELINE_EVENTS = [
 ];
 
 export default function EventsPage() {
+  const [activeTab, setActiveTab] = useState<"upcoming" | "past">("upcoming");
+
+  const filteredTimeline = TIMELINE_EVENTS.map(day => ({
+    ...day,
+    events: day.events.filter(e => activeTab === "upcoming" ? e.active : !e.active)
+  })).filter(day => day.events.length > 0);
+
   return (
     <div className="flex min-h-screen flex-col bg-[#FAFAFA]">
       <main className="flex-1">
@@ -101,10 +109,24 @@ export default function EventsPage() {
                 <div className="sticky top-28">
                   {/* Luma-style Segmented Pills Container */}
                   <div className="inline-flex h-10 items-center text-gray-500 mb-8 w-full max-w-full justify-start overflow-x-auto rounded-full bg-gray-100/80 p-1">
-                    <button className="inline-flex w-1/2 items-center justify-center whitespace-nowrap px-4 py-1.5 text-sm font-semibold transition-all bg-white text-black shadow-sm rounded-full">
+                    <button 
+                      onClick={() => setActiveTab("upcoming")}
+                      className={`inline-flex w-1/2 items-center justify-center whitespace-nowrap px-4 py-1.5 text-sm font-semibold transition-all rounded-full ${
+                        activeTab === "upcoming" 
+                          ? "bg-white text-black shadow-sm" 
+                          : "font-medium hover:text-black hover:bg-black/5"
+                      }`}
+                    >
                       Upcoming
                     </button>
-                    <button className="inline-flex w-1/2 items-center justify-center whitespace-nowrap px-4 py-1.5 text-sm font-medium transition-all hover:text-black rounded-full hover:bg-black/5">
+                    <button 
+                      onClick={() => setActiveTab("past")}
+                      className={`inline-flex w-1/2 items-center justify-center whitespace-nowrap px-4 py-1.5 text-sm transition-all rounded-full ${
+                        activeTab === "past" 
+                          ? "bg-white text-black font-semibold shadow-sm" 
+                          : "font-medium hover:text-black hover:bg-black/5"
+                      }`}
+                    >
                       Past
                     </button>
                   </div>
@@ -118,7 +140,14 @@ export default function EventsPage() {
                 {/* Timeline Container */}
                 <div className="relative border-l-2 border-dashed border-gray-200/60 ml-4 md:ml-0 md:pl-10 space-y-16 pb-12">
                   
-                  {TIMELINE_EVENTS.map((day, i) => (
+                  {filteredTimeline.length === 0 && (
+                    <div className="flex flex-col items-center justify-center p-12 rounded-2xl border border-dashed border-gray-300 bg-white/50 text-center">
+                      <p className="text-gray-900 font-semibold mb-1">No {activeTab} events found</p>
+                      <p className="text-sm text-gray-500">Check back later for updates.</p>
+                    </div>
+                  )}
+
+                  {filteredTimeline.map((day, i) => (
                     <div key={i} className="relative animate-fade-up" style={{ animationDelay: `${i * 100}ms` }}>
                       
                       {/* Date Marker (Dot) */}
