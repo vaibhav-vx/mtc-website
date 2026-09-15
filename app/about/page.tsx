@@ -9,29 +9,23 @@ export const metadata = {
 
 const TEAM = [
   {
-    name: "Aarav Desai",
+    name: "Satyam Pandey",
     role: "Founder & Community Lead",
     image: "bg-blue-100 text-blue-600",
-    initials: "AD"
-  },
-  {
-    name: "Sneha Patel",
-    role: "Head of Events",
-    image: "bg-purple-100 text-purple-600",
     initials: "SP"
   },
   {
-    name: "Rohan Verma",
-    role: "Developer Relations",
-    image: "bg-orange-100 text-orange-600",
-    initials: "RV"
+    name: "Suraj Saharan",
+    role: "Head of Events",
+    image: "bg-purple-100 text-purple-600",
+    initials: "SS"
   },
   {
-    name: "Priya Sharma",
-    role: "Partnerships",
-    image: "bg-green-100 text-green-600",
-    initials: "PS"
-  }
+    name: "Vaibhav Dubey",
+    role: "Developer Relations",
+    image: "bg-orange-100 text-orange-600",
+    initials: "VD"
+  },
 ];
 
 export default function AboutPage() {
