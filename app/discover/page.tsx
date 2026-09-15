@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { BookOpen, Gamepad2, Laptop, Coffee, Sparkles, Palette, Coins, MapPin } from "lucide-react";
+import { BookOpen, Gamepad2, Laptop, Coffee, Sparkles, Palette, Coins, MapPin, Search } from "lucide-react";
 import Link from "next/link";
 
 const CATEGORIES = [
@@ -115,11 +115,23 @@ export default function DiscoverPage() {
         <div className="flex flex-col gap-12 px-4 pt-28 pb-12 sm:px-6 sm:pt-32 sm:pb-16 lg:px-8">
           <div className="mx-auto w-full max-w-[1000px]">
             
-            {/* Discover Header */}
+            {/* Discover Header & Search */}
             <div className="animate-fade-up mb-12">
-              <h1 className="font-display text-4xl font-bold tracking-tight text-black sm:text-5xl">
+              <h1 className="font-display text-4xl font-bold tracking-tight text-black sm:text-5xl mb-8">
                 Discover
               </h1>
+              
+              {/* Search Bar - Luma Style */}
+              <div className="relative w-full max-w-2xl">
+                <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                  <Search className="h-5 w-5 text-gray-400" />
+                </div>
+                <input
+                  type="text"
+                  className="block w-full pl-11 pr-4 py-3.5 bg-white border border-gray-200 rounded-2xl text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-transparent shadow-sm transition-shadow hover:shadow-md text-base sm:text-lg"
+                  placeholder="Search for events, calendars, or places..."
+                />
+              </div>
             </div>
 
             {/* Browse by Category - Luma Style Grid */}
