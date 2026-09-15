@@ -196,21 +196,21 @@ export default function EventsPage() {
                   ))}
                 </div>
                 
-                {/* Banner Call to Action */}
-                <div className="animate-fade-up mt-8 rounded-3xl bg-black px-6 py-8 text-white sm:px-8 sm:py-10 shadow-lg delay-300">
-                  <div className="mx-auto max-w-2xl text-center">
-                    <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                      Want to host an event with us?
-                    </h2>
-                    <p className="mt-3 text-white/80">
-                      We partner with organizers, companies, and spaces to run great tech events in Mumbai.
-                    </p>
-                    <Link href="/join" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold transition-all bg-white text-black hover:bg-gray-100 h-10 px-5 mt-6 rounded-full shadow-sm hover:-translate-y-0.5">
-                      Get in touch
-                    </Link>
-                  </div>
-                </div>
+              </div>
+            </div>
 
+            {/* Banner Call to Action */}
+            <div className="animate-fade-up mt-16 rounded-3xl bg-black px-6 py-8 text-white sm:px-8 sm:py-10 shadow-lg delay-300">
+              <div className="mx-auto max-w-2xl text-center">
+                <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                  Want to host an event with us?
+                </h2>
+                <p className="mt-3 text-white/80">
+                  We partner with organizers, companies, and spaces to run great tech events in Mumbai.
+                </p>
+                <Link href="/join" className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-semibold transition-all bg-white text-black hover:bg-gray-100 h-10 px-5 mt-6 rounded-full shadow-sm hover:-translate-y-0.5">
+                  Get in touch
+                </Link>
               </div>
             </div>
 
